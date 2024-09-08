@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    padding: 3vh 5vw;
+}
+
+.logoSection{
+    color: #ffffff;
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: 700;
+    line-height: 42px;
+}
