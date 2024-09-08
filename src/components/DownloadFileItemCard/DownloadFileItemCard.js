@@ -3,7 +3,7 @@ import styles from './downloadFileItemCardStyles.module.css'
 import Button from "../Button/Button"
 
 export default function DownloadFileItemCard(props) {
-    const { fileName = "", downloadLink = "" } = props
+    const { fileName = "", downloadLink = "", handleDownload = () => { } } = props
     return (
         <div className={styles.wrapper}>
             <div className={styles.iconContainer}>
@@ -11,7 +11,7 @@ export default function DownloadFileItemCard(props) {
             </div>
             <div className={styles.fileNameContainer}>{fileName}</div>
             <div className={styles.downloadButtonContainer}>
-                <Button buttonText="Download" />
+                <Button buttonText="Download" buttonClickAction={() => handleDownload(downloadLink)} />
             </div>
         </div>
     )
